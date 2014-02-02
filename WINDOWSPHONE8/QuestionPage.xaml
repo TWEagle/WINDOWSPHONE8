@@ -1,0 +1,30 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="WINDOWSPHONE8.QuestionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+
+
+    <!--ContentPanel - place additional content here-->
+    <Grid x:Name="ContentPanel" Grid.Row="1">
+        <Button x:Name="btnA" Content="A" HorizontalAlignment="Left" Margin="52,415,0,0" VerticalAlignment="Top" Width="176"/>
+        <Button x:Name="btnB" Content="B" HorizontalAlignment="Left" Margin="266,415,0,0" VerticalAlignment="Top" Width="191"/>
+        <Button x:Name="btnC" Content="C" HorizontalAlignment="Left" Margin="52,530,0,0" VerticalAlignment="Top" Width="176"/>
+        <Button x:Name="btnD" Content="D" HorizontalAlignment="Left" Margin="266,530,0,0" VerticalAlignment="Top" Width="191"/>
+        <TextBlock x:Name="txtQuestion" HorizontalAlignment="Left" Margin="88,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="129" Width="328" Foreground="White"/>
+        <Button x:Name="btnHome" Content="Takaisin alkuun" HorizontalAlignment="Left" Margin="0,728,0,0" VerticalAlignment="Top" Click="btnHome_Click"/>
+    </Grid>
+
+
+</phone:PhoneApplicationPage>

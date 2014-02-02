@@ -1,0 +1,33 @@
+Hei! Olin käynyt projektin Windows Phone-sovelluksen teknisiä kohtia läpi ja törmäsin muutamaan
+ryppyyn, joita tulisi silitellä yhdessä kuntoon vaikka ensi perjantain kokouksessa. Ajattelin tässä viestissä 
+avata yhtä kohtaa, mihin mietinkin jo ratkaisua.
+
+Viime palaverissa oli puhetta, että kun QR-koodi luetaan puhelimen natiivilla kamerasovelluksella, niin QR-koodin 
+sisältämän viestin tulisi ohjata käyttäjä Windows Storeen tai jonnekin muulle sivulle, jos puhelimesta ei löydy
+sovellusta. Eli käytännössä jokaisen QR-koodin tulisi sisältää osoite esim.
+
+http://www.windowsphone.com/en-us/store/app/facebook/82a23635-5bd9-df11-a844-00237de2db9e
+
+Jotta linkki toimisi, kyseiseen viestiin ei voida sisällyttää visakysymystä identifioivaa dataa. 
+Näin ollen sovelluksen tulisi itse päättää mikä kysymys tietokannasta valitaan.
+
+Yksi ratkaisu voisi olla ns. URI-assosiaatio. QR-koodin viesti voisi olla seuraavanlainen:
+
+QRreaderApp:NaytaKysymys?KysymysID=1
+
+Viestin saatuaan puhelin ehdottaa käyttäjälle sovellusta, joka on rekisteröity kyseiseen assosiaatioon(=QRreaderApp). 
+Puhelimeen voi myös olla asennettuna useita sopivia sovelluksia, joista käyttäjän tulee valita yksi. 
+Jos sopivaa sovellusta ei löydy, puhelin etsii Storesta.
+
+Toisessa käyttötapauksessa, eli meidän sovelluksessa, edellä mainitusta viestistä voidaan poimia tarvittavat tiedot
+siten, että sovellus pyytää tietokannasta koodia vastaavan kysymyksen.
+
+En kuitenkaan pääse testaamaan näitä ominaisuuksia millään tasolla ennen kuin minulla löydetään jostain 
+Windows Phone 8-puhelin.
+
+Pistin tähän viitteeksi myös alustavia kuvauksia siitä minkälaista sovelluksen toiminta voisi olla.
+
+Terveisin,
+
+Einari Naukkarinen
++35840 715 8996

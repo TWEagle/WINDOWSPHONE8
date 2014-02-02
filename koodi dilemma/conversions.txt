@@ -1,0 +1,21 @@
+create a custom url with parameters at is.gd
+
+poriqrvisa:MainPage.xaml?kysymys=1
+-->
+http://is.gd/kysymys1
+-------------------------------------------
+poriqrvisa:MainPage.xaml?kysymys=2
+-->
+http://is.gd/kysymys2
+-------------------------------------------
+poriqrvisa:MainPage.xaml?kysymys=3
+-->
+http://is.gd/kysymys3
+-------------------------------------------
+poriqrvisa:MainPage.xaml?kysymys=4
+-->
+http://is.gd/kysymys4
+-------------------------------------------
+poriqrvisa:MainPage.xaml?kysymys=5
+-->
+http://is.gd/kysymys5

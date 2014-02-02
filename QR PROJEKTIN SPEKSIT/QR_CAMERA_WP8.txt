@@ -1,0 +1,29 @@
+URI association seems more fitting 
+
+First register for URI association
+<Extensions>
+  <Protocol Name="contoso" NavUriFragment="encodedLaunchUri=%s" TaskID="_default" />
+</Extensions>
+
+URI content 
+contoso:ShowProducts?CategoryID=aea6ae1f-9894-404e-8bca-ec47ec5b9c6c
+
+QRreaderApp:N‰yt‰Kysymys?KysymysID=1
+
+- Opettele k‰ytt‰m‰‰n eri phone app sivuja.
+
+----------------------------------------------------------------------------
+
+Jos lukee koodin peruskameralla
+
+QRreaderApp:N‰yt‰Kysymys?KysymysID=1
+
+puhelin ehdottaa sovellusta jos on useita, jotka k‰yv‰t kyseiseen URI associationiin.
+Jos sopivaa sovellusta ei lˆyd‰, puhelin etsii Storesta.
+
+
+---------------------------------------------------------------------------
+
+ratkaisu!
+
+muutetaan URI association message to tinyurl.

@@ -1,0 +1,47 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="WINDOWSPHONE8.CameraPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Canvas x:Name="viewfinderCanvas" Width="640" Height="480" Tap="viewfinder_Tapped">
+            <Canvas.Background>
+                <VideoBrush x:Name="viewfinderBrush">
+                    <VideoBrush.RelativeTransform>
+                        <CompositeTransform
+          x:Name="viewfinderTransform"
+          CenterX="0.5"
+          CenterY="0.5"/>
+                    </VideoBrush.RelativeTransform>
+                </VideoBrush>
+            </Canvas.Background>
+            <TextBlock 
+                x:Name="focusBrackets" 
+                Text="[   ]" 
+                FontSize="40"
+                Visibility="Collapsed"/>
+        </Canvas>
+        <TextBlock Width="626" Height="40"
+           HorizontalAlignment="Left"
+           Margin="8,428,0,0"
+           Name="txtMessage"
+           VerticalAlignment="Top"
+           FontSize="24"
+           FontWeight="ExtraBold"
+           Text="Tap the screen to capture a photo."/>
+        <Button Name="AFButton" Content="AF" Click="focus_Clicked" FontSize="26" FontWeight="ExtraBold" Height="75" Margin="585,395,0,10"/>
+    </Grid>
+
+
+</phone:PhoneApplicationPage>
