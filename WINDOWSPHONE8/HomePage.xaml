@@ -23,6 +23,9 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/Assets/city2.jpg"/>
+            </Grid.Background>
             <TextBlock x:Name="txtUser" HorizontalAlignment="Left" Margin="51,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Grid.RowSpan="2"/>
             <Button x:Name="btnBack" Content="Takaisin alkuun" HorizontalAlignment="Left" Margin="0,728,0,0" VerticalAlignment="Top" Width="225" Click="btnBack_Click"/>
             <Button x:Name="btnCamera" Content="Kuvakaappaus" HorizontalAlignment="Left" Margin="230,728,0,0" VerticalAlignment="Top" Width="250" Click="btnCamera_Click"/>

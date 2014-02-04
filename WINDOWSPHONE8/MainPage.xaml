@@ -24,9 +24,13 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1">
-            <Button x:Name="btnStart" Content="Pelaa!" HorizontalAlignment="Left" Margin="61,393,0,0" VerticalAlignment="Top" Width="355" Click="btnStart_Click"/>
-            <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="72" Margin="61,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="355"/>
-            <TextBlock x:Name="txtStart" HorizontalAlignment="Left" Margin="72,294,0,0" TextWrapping="Wrap" Text="Anna käyttäjänimi:" VerticalAlignment="Top"/>
+            <Grid.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/Assets/city2.jpg"/>
+            </Grid.Background>
+            <Button x:Name="btnStart" Content="Pelaa!" HorizontalAlignment="Left" Margin="61,453,0,0" VerticalAlignment="Top" Width="355" Click="btnStart_Click"/>
+            <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="72" Margin="61,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="355"/>
+            <TextBlock x:Name="txtStart" HorizontalAlignment="Left" Margin="61,349,0,0" TextWrapping="Wrap" Text="Anna käyttäjänimi:" VerticalAlignment="Top" Foreground="White"/>
+            <Grid HorizontalAlignment="Left" Height="176" Margin="61,349,0,0" VerticalAlignment="Top" Width="355" Background="#4CF1EB6D" Canvas.ZIndex="-1"/>
         </Grid>
 
     </Grid>

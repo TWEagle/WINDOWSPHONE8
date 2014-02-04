@@ -1,6 +1,7 @@
-﻿<xapCache source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\WINDOWSPHONE8_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="1/31/2014 1:35:45 AM">
-  <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\obj\Debug\WINDOWSPHONE8.dll" archivePath="WINDOWSPHONE8.dll" lastWriteTime="1/31/2014 1:35:43 AM" />
+﻿<xapCache source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\WINDOWSPHONE8_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2/4/2014 2:42:44 PM">
+  <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\obj\Debug\WINDOWSPHONE8.dll" archivePath="WINDOWSPHONE8.dll" lastWriteTime="2/4/2014 2:42:43 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="1/30/2014 5:30:19 PM" />
+  <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Assets\city2.jpg" archivePath="Assets\city2.jpg" lastWriteTime="2/4/2014 1:59:16 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="1/30/2014 5:30:19 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="1/30/2014 5:30:19 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="1/30/2014 5:30:19 PM" />

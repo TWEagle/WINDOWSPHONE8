@@ -18,6 +18,9 @@
 
     <!--ContentPanel - place additional content here-->
     <Grid x:Name="ContentPanel" Grid.Row="1">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/Assets/city2.jpg"/>
+        </Grid.Background>
         <Button x:Name="btnA" Content="A" HorizontalAlignment="Left" Margin="52,415,0,0" VerticalAlignment="Top" Width="176"/>
         <Button x:Name="btnB" Content="B" HorizontalAlignment="Left" Margin="266,415,0,0" VerticalAlignment="Top" Width="191"/>
         <Button x:Name="btnC" Content="C" HorizontalAlignment="Left" Margin="52,530,0,0" VerticalAlignment="Top" Width="176"/>

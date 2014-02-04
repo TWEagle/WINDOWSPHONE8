@@ -38,5 +38,14 @@ namespace WINDOWSPHONE8
             string kysymys = "Mikä on aakkosten ensimmäinen kirjain?";
             NavigationService.Navigate(new Uri("/QuestionPage.xaml", UriKind.Relative));
         }
+
+        protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
+        {
+            //Do your work here
+
+            MessageBox.Show("Haluatko poistua?");
+            e.Cancel = true;
+            //base.OnBackKeyPress(e);
+        }
     }
 }

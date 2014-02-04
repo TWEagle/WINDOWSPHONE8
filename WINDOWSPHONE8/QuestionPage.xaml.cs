@@ -33,5 +33,13 @@ namespace WINDOWSPHONE8
         {
             NavigationService.Navigate(new Uri("/HomePage.xaml", UriKind.Relative));
         }
+
+        protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
+        {
+            MessageBox.Show("Haluatko poistua?");
+            e.Cancel = true;
+            //Do your work here
+            //base.OnBackKeyPress(e);
+        }
     }
 }
