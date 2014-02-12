@@ -13,20 +13,19 @@
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="False">
 
-    <!--LayoutRoot is the root grid where all page content is placed-->
-
-
-    <!--ContentPanel - place additional content here-->
     <Grid x:Name="ContentPanel" Grid.Row="1">
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="/Assets/city2.jpg"/>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF0BBB3B"/>
+            </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="btnA" Content="A" HorizontalAlignment="Left" Margin="52,415,0,0" VerticalAlignment="Top" Width="176"/>
-        <Button x:Name="btnB" Content="B" HorizontalAlignment="Left" Margin="266,415,0,0" VerticalAlignment="Top" Width="191"/>
-        <Button x:Name="btnC" Content="C" HorizontalAlignment="Left" Margin="52,530,0,0" VerticalAlignment="Top" Width="176"/>
-        <Button x:Name="btnD" Content="D" HorizontalAlignment="Left" Margin="266,530,0,0" VerticalAlignment="Top" Width="191"/>
-        <TextBlock x:Name="txtQuestion" HorizontalAlignment="Left" Margin="88,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="129" Width="328" Foreground="White"/>
-        <Button x:Name="btnHome" Content="Takaisin alkuun" HorizontalAlignment="Left" Margin="0,728,0,0" VerticalAlignment="Top" Click="btnHome_Click"/>
+        <Button x:Name="answer1Btn" HorizontalAlignment="Left" Margin="0,415,0,0" VerticalAlignment="Top" Width="235" Click="answer1Btn_Click" Height="115" Padding="3" FontSize="16"/>
+        <Button x:Name="answer2Btn" HorizontalAlignment="Right" Margin="233,415,0,0" VerticalAlignment="Top" Width="235" Click="answer2Btn_Click" Height="115" Padding="3" FontSize="16"/>
+        <Button x:Name="answer3Btn" HorizontalAlignment="Left" Margin="0,530,0,0" VerticalAlignment="Top" Width="235" Click="answer3Btn_Click" Height="115" Padding="3" FontSize="16"/>
+        <Button x:Name="answer4Btn" HorizontalAlignment="Right" Margin="233,530,0,0" VerticalAlignment="Top" Width="235" Click="answer4Btn_Click" Height="115" Padding="3" FontSize="16" />
+        <TextBlock x:Name="txtQuestion" HorizontalAlignment="Left" Margin="10,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="293" Width="470" Foreground="White" FontSize="38"/>
+        <Button x:Name="btnHome" Content="home" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="156" Width="235" Click="btnHome_Click"/>
     </Grid>
 
 

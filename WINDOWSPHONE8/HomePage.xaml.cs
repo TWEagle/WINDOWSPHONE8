@@ -12,6 +12,8 @@ namespace WINDOWSPHONE8
 {
     public partial class HomePage : PhoneApplicationPage
     {
+        public static int vastauksiaOikein;
+        public static int vastauksiaVaarin;
         public HomePage()
         {
             InitializeComponent();
@@ -19,23 +21,18 @@ namespace WINDOWSPHONE8
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            AlustaOikeinVaarin();
             this.txtUser.Text = "Tervetuloa pelaamaan " + MainPage._userName + ".";
-            
         }
 
-        private void btnBack_Click(object sender, RoutedEventArgs e)
+
+        protected override void OnNavigatingFrom(NavigatingCancelEventArgs e)
         {
-            NavigationService.GoBack();
+            base.OnNavigatingFrom(e);
         }
-
-        private void btnCamera_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/ScannerPage.xaml", UriKind.Relative));
-        }
-
         private void btnToQuestion_Click(object sender, RoutedEventArgs e)
         {
-            string kysymys = "Mikä on aakkosten ensimmäinen kirjain?";
+            //string kysymys = "Mikä on aakkosten ensimmäinen kirjain?";
             NavigationService.Navigate(new Uri("/QuestionPage.xaml", UriKind.Relative));
         }
 
@@ -43,9 +40,38 @@ namespace WINDOWSPHONE8
         {
             //Do your work here
 
-            MessageBox.Show("Haluatko poistua?");
-            e.Cancel = true;
-            //base.OnBackKeyPress(e);
+            //MessageBox.Show("Haluatko poistua?");
+            //e.Cancel = true;
+            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+        }
+
+        private void cameraBtn_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/ScannerPage.xaml", UriKind.Relative));
+        }
+
+        private void AlustaOikeinVaarin()
+        {
+            int sumOikein = vastauksiaOikein;
+            int sumVaarin = vastauksiaVaarin; 
+
+            if(sumOikein == 0)
+            {
+                oikeinTxt.Text = "Vastauksia oikein: - ";
+            }
+            else
+            {
+                oikeinTxt.Text = "Vastauksia oikein: " + sumOikein;
+            }
+            
+            if(sumVaarin == 0)
+            {
+                vaarinTxt.Text = "Vastauksia väärin: - ";
+            }
+            else
+            {
+                vaarinTxt.Text = "Vastauksia väärin: " + sumVaarin;
+            }
         }
     }
 }

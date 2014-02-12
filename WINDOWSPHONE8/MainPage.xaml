@@ -25,12 +25,15 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1">
             <Grid.Background>
-                <ImageBrush Stretch="Fill" ImageSource="/Assets/city2.jpg"/>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF0BBB3B"/>
+                </LinearGradientBrush>
             </Grid.Background>
             <Button x:Name="btnStart" Content="Pelaa!" HorizontalAlignment="Left" Margin="61,453,0,0" VerticalAlignment="Top" Width="355" Click="btnStart_Click"/>
             <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="72" Margin="61,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="355"/>
             <TextBlock x:Name="txtStart" HorizontalAlignment="Left" Margin="61,349,0,0" TextWrapping="Wrap" Text="Anna käyttäjänimi:" VerticalAlignment="Top" Foreground="White"/>
-            <Grid HorizontalAlignment="Left" Height="176" Margin="61,349,0,0" VerticalAlignment="Top" Width="355" Background="#4CF1EB6D" Canvas.ZIndex="-1"/>
+            <Grid HorizontalAlignment="Left" Height="176" Margin="61,349,0,0" VerticalAlignment="Top" Width="355" Background="#4C23BD0A" Canvas.ZIndex="-1"/>
         </Grid>
 
     </Grid>

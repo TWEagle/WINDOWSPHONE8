@@ -1,5 +1,7 @@
 Compile filter specified.  Only the following files will be processed:
 c:\gitprojects\windowsphone8\windowsphone8\bin\debug\mdil\windowsphone8.dll
+Processing file: C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\MDIL\Microsoft.Phone.Controls.dll
+File C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\MDIL\Microsoft.Phone.Controls.dll is not in the compile filter. Skipping.
 Processing file: C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\MDIL\Silverlight_ZXing_Core.dll
 File C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\MDIL\Silverlight_ZXing_Core.dll is not in the compile filter. Skipping.
 Processing file: C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\MDIL\WINDOWSPHONE8.dll

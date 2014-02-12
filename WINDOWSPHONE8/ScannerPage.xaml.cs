@@ -8,6 +8,8 @@ using com.google.zxing;
 using com.google.zxing.common;
 using com.google.zxing.qrcode;
 using Microsoft.Phone.Controls;
+using System.Windows;
+using System.Collections.Generic;
 
 namespace WINDOWSPHONE8
 {
@@ -36,17 +38,22 @@ namespace WINDOWSPHONE8
         {
             _photoCamera = new PhotoCamera();
             _photoCamera.Initialized += OnPhotoCameraInitialized;
-            _previewVideo.SetSource(_photoCamera);
+            _previewVideo.SetSource(_photoCamera); // _previewVideo is a VideoBrush-object
 
             CameraButtons.ShutterKeyHalfPressed += (o, arg) => _photoCamera.Focus();
 
             base.OnNavigatedTo(e);
         }
-        protected override void OnNavigatingFrom
-          (System.Windows.Navigation.NavigatingCancelEventArgs e)
+        protected override void OnNavigatingFrom(System.Windows.Navigation.NavigatingCancelEventArgs e)
         {
             if (_photoCamera != null)
             {
+                // nama 3 ovat omia lisayksia
+                _previewVideo = null;
+                CameraButtons.ShutterKeyHalfPressed -= (o, arg) => _photoCamera.Focus();
+                _timer.Tick -= (o, arg) => ScanPreviewBuffer();
+
+                _photoCamera.Initialized -= OnPhotoCameraInitialized;
                 _photoCamera.Dispose();
             }
         }
@@ -67,44 +74,32 @@ namespace WINDOWSPHONE8
 
         private void ScanPreviewBuffer()
         {
-            try
+
+            if (NavigationService.CurrentSource == new Uri("/ScannerPage.xaml", UriKind.Relative))
             {
-                _photoCamera.GetPreviewBufferY(_luminance.PreviewBufferY);
-                var binarizer = new HybridBinarizer(_luminance);
-                var binBitmap = new BinaryBitmap(binarizer);
-                var result = _reader.decode(binBitmap);
-                Dispatcher.BeginInvoke(() => DisplayResult(result.Text));
-                // katsotaan miten käy
-                string kysymysID, kysymysString;
-                string viesti = result.Text;
-                int categoryIdIndex = viesti.IndexOf("kysymys") + 7;
-                kysymysID = viesti.Substring(categoryIdIndex);
-                
-                switch (kysymysID)
+                try
                 {
-                    case "1":
-                        kysymysString = "Kysymys 1. Mikä on aakkosten kolmas kirjain?";
-                        break;
-                    case "2":
-                        kysymysString = "Kysymys 2. Mitä kuuluu?";
-                        break;
-                    case "3":
-                        kysymysString = "Kysymys 3. Kissa vai koira?";
-                        break;
-                    case "4":
-                        kysymysString = "Kysymys 4. Whats yo name?";
-                        break;
-                    case "5":
-                        kysymysString = "Kysymys 5. ...?";
-                        break;
-                    default:
-                        kysymysString = "Kysymystä ei voitu hakea.";
-                        break;
+                    _photoCamera.GetPreviewBufferY(_luminance.PreviewBufferY);
+                    var binarizer = new HybridBinarizer(_luminance);
+                    var binBitmap = new BinaryBitmap(binarizer);
+                    var result = _reader.decode(binBitmap);
+                    Dispatcher.BeginInvoke(() => DisplayResult(result.Text));
+                    // katsotaan miten käy
+                    if (result.Text != null)
+                    {
+                        string kysymysID;
+                        string viesti = result.Text;
+                        int categoryIdIndex = viesti.IndexOf("kysymys") + 7;
+                        kysymysID = viesti.Substring(categoryIdIndex);
+
+
+                        Dispatcher.BeginInvoke(() => KysymysSaatu(kysymysID));
+                    }
                 }
-                Dispatcher.BeginInvoke(() => KysymysSaatu(kysymysString));
-            }
-            catch
-            {
+                catch (Exception ex)
+                {
+                    //Dispatcher.BeginInvoke(() => NaytaException(ex.Message));
+                }
             }
         }
 
@@ -116,6 +111,16 @@ namespace WINDOWSPHONE8
         private void KysymysSaatu(string kys)
         {// kokeillaan siirtyä kysymys-sivulle
             NavigationService.Navigate(new Uri("/QuestionPage.xaml?kysymys="+kys, UriKind.Relative));
+        }
+
+        private void NaytaException(string virheMsg)
+        {
+            MessageBox.Show(virheMsg);
+        }
+
+        private void returnBtn_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/HomePage.xaml", UriKind.Relative));
         }
     }
 }

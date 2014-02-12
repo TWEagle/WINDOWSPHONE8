@@ -1,17 +1,20 @@
-﻿<xapCache source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\WINDOWSPHONE8_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2/4/2014 2:42:44 PM">
-  <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\obj\Debug\WINDOWSPHONE8.dll" archivePath="WINDOWSPHONE8.dll" lastWriteTime="2/4/2014 2:42:43 PM" />
+﻿<xapCache source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\WINDOWSPHONE8_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2/11/2014 7:09:01 PM">
+  <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\obj\Debug\WINDOWSPHONE8.dll" archivePath="WINDOWSPHONE8.dll" lastWriteTime="2/11/2014 7:09:00 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="1/30/2014 5:30:19 PM" />
+  <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Assets\camera.png" archivePath="Assets\camera.png" lastWriteTime="2/11/2014 10:53:30 AM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Assets\city2.jpg" archivePath="Assets\city2.jpg" lastWriteTime="2/4/2014 1:59:16 PM" />
+  <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Assets\return.png" archivePath="Assets\return.png" lastWriteTime="2/11/2014 11:24:49 AM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="1/30/2014 5:30:19 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="1/30/2014 5:30:19 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="1/30/2014 5:30:19 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="1/30/2014 5:30:19 PM" />
-  <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="1/30/2014 10:02:55 PM" />
+  <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2/10/2014 7:40:11 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="1/30/2014 5:30:19 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="1/30/2014 5:30:19 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="1/1/2013 6:57:00 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\packages\ZXing.WP7.1.3\lib\sl3-wp\Silverlight_ZXing_Core.dll" archivePath="Silverlight_ZXing_Core.dll" lastWriteTime="1/30/2014 9:55:11 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\packages\ZXing.WP7.1.3\lib\sl3-wp\WP7_Barcode_Library.dll" archivePath="WP7_Barcode_Library.dll" lastWriteTime="1/30/2014 9:55:11 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\packages\ZXing.WP7.1.3\lib\sl3-wp\Silverlight_ZXing_Core.xml" archivePath="Silverlight_ZXing_Core.xml" lastWriteTime="1/30/2014 9:55:11 PM" />
   <file source="C:\GitProjects\WINDOWSPHONE8\packages\ZXing.WP7.1.3\lib\sl3-wp\WP7_Barcode_Library.xml" archivePath="WP7_Barcode_Library.xml" lastWriteTime="1/30/2014 9:55:11 PM" />
-  <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="1/30/2014 10:39:22 PM" />
+  <file source="C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2/10/2014 8:00:53 PM" />
 </xapCache>

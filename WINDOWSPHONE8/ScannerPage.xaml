@@ -27,7 +27,10 @@
                 </VideoBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <ListBox Margin="10" x:Name="_matchesList" FontSize="30" FontWeight="ExtraBold" />
+        <ListBox Margin="10" x:Name="_matchesList" FontSize="30" FontWeight="ExtraBold" >
+            
+        </ListBox>
+        <Image x:Name="returnBtn" Height="100" Width="100" Margin="10,700,370,0" Source="/Assets/return.png" Canvas.ZIndex="4" Tap="returnBtn_Tap"/>
     </Grid>
 
 </phone:PhoneApplicationPage>

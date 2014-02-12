@@ -18,7 +18,6 @@ C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\obj\Debug\WINDOWSPHONE8.dll
 C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\obj\Debug\WINDOWSPHONE8.pdb
 C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\obj\Debug\XapCacheFile.xml
 C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\obj\Debug\HomePage.g.cs
-C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\obj\Debug\CameraPage.g.cs
 C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\Silverlight_ZXing_Core.dll
 C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\WP7_Barcode_Library.dll
 C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\Silverlight_ZXing_Core.xml
@@ -26,3 +25,4 @@ C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\WP7_Barcode_Library.xml
 C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\obj\Debug\WINDOWSPHONE8.csprojResolveAssemblyReference.cache
 C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\obj\Debug\ScannerPage.g.cs
 C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\obj\Debug\QuestionPage.g.cs
+C:\GitProjects\WINDOWSPHONE8\WINDOWSPHONE8\Bin\Debug\Microsoft.Phone.Controls.dll
